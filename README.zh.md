@@ -31,6 +31,8 @@ dsh plugin --profile web add dsh-diet
 
 也可以打开 **插件 → 添加插件**，搜索 `dsh-diet` 安装。
 
+> 如果 npm 上还没有 `dsh-diet`，请先用下面的本地目录安装。
+
 安装后刷新页面，左侧会出现 **饮食记录**（英文界面为 **Daily intake**）。
 
 ### 本地目录安装
