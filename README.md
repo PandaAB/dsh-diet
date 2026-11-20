@@ -2,6 +2,7 @@
 
 [简体中文](README.md) · [English](README.en.md)
 
+[![npm](https://img.shields.io/npm/v/dsh-diet.svg)](https://www.npmjs.com/package/dsh-diet)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)
 ![DeepSeek Harness](https://img.shields.io/badge/DeepSeek%20Harness-%E2%89%A50.2.0--rc.2-4A5699.svg)
 [![CI](https://github.com/PandaAB/dsh-diet/actions/workflows/ci.yml/badge.svg)](https://github.com/PandaAB/dsh-diet/actions/workflows/ci.yml)
@@ -90,8 +91,6 @@ dsh plugin --profile web add dsh-diet
 ```
 
 也可以打开 **插件 → 添加插件**，搜索 `dsh-diet` 安装。
-
-> 如果 npm 上还没有 `dsh-diet`，请先用下面的本地目录安装。
 
 安装后刷新页面，左侧会出现 **饮食记录**（英文界面为 **Daily intake**）。
 
