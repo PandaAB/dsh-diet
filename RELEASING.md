@@ -1,23 +1,31 @@
 # Releasing
 
-`dsh-diet` is published to the public npm registry and distributed from GitHub. The two are linked through the `repository` field, which enables npm provenance.
+`dsh-diet` is published to the public npm registry and distributed from GitHub. Releases use **npm Trusted Publishing (OIDC)** — no long-lived `NPM_TOKEN` is required.
 
 ## One-time setup
 
-1. Create a free account at <https://www.npmjs.com/signup>.
-2. Enable two-factor authentication on the npm account.
-3. Log in locally:
+1. Create a free account at <https://www.npmjs.com/signup> and enable two-factor authentication.
+2. Publish the first version once (npm Trusted Publishing cannot publish a package's first version):
    ```sh
    npm login
-   npm whoami
+   npm publish --access public
    ```
-4. In GitHub, open **Settings → Secrets and variables → Actions** and add `NPM_TOKEN`:
-   - npm Access Token → **Granular Access Token**
-   - package permissions: **Read and write**
-   - scope: the `dsh-diet` package (or all packages)
-   - bypass 2FA: enabled for CI
-
-   A classic **Automation** token also works. Never commit the token.
+   A short-lived granular token with bypass 2FA also works for this bootstrap step; delete it immediately afterwards.
+3. Open the package settings on npm:
+   **Packages → dsh-diet → Settings → Trusted Publisher → GitHub Actions**
+   - Organization or user: `PandaAB`
+   - Repository: `dsh-diet`
+   - Workflow filename: `publish.yml`
+   - Environment name: leave blank
+   - Allowed actions: check **Allow npm publish**
+   - Click **Set up connection**
+4. Do **not** create an `NPM_TOKEN` GitHub secret. The workflow uses the OIDC token from:
+   ```yaml
+   permissions:
+     id-token: write
+   ```
+5. After a successful OIDC release, optionally switch the package's Publishing access to:
+   **Require two-factor authentication and disallow bypass 2fa tokens**.
 
 ## Release checklist
 
@@ -31,11 +39,11 @@
    npm test
    npm run pack:check
    ```
-4. Commit and push:
+4. Push the commit and tag:
    ```sh
    git push --follow-tags
    ```
-5. Create a GitHub release for the new tag (`v0.1.1`, etc.). Publishing the release triggers `.github/workflows/publish.yml`, which runs `npm test` and publishes with provenance.
+5. Create a GitHub release for the new tag (`v0.1.1`, etc.). Publishing the release triggers `.github/workflows/publish.yml`, which runs `npm test` and publishes with provenance through OIDC.
 6. Verify:
    ```sh
    npm view dsh-diet version
@@ -44,7 +52,7 @@
 
 ## Manual publish fallback
 
-If Actions cannot publish, run locally:
+If Actions cannot publish, run locally with your npm account and OTP:
 
 ```sh
 npm login
