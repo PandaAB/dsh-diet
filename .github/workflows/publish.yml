@@ -19,7 +19,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          registry-url: https://registry.npmjs.org
           cache: npm
 
       - name: Install dependencies
@@ -28,7 +27,6 @@ jobs:
       - name: Build and check
         run: npm test
 
+      # Uses npm Trusted Publishing (OIDC). No NPM_TOKEN secret.
       - name: Publish
         run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
