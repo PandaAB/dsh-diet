@@ -15,7 +15,9 @@
 >
 > The hard part of a diet is rarely “eat less”. It is **knowing how much to eat each day**.
 >
-> `dsh-diet` turns the **“foolproof formula”** shared by Douyin creator **零重力R哥** into a small, practical tracker: enter your body weight, choose active or less active, and your targets appear; log what you ate by grams and see what is left.
+> `dsh-diet` turns the **foolproof formula** shared by Douyin creator **零重力R哥** into a practical food-log page.
+>
+> For people cutting weight who do not want to recalculate macros every day: enter your weight, choose active or less active, and your targets appear; log what you ate by grams and see what is left.
 
 ![Daily intake page](docs/preview.png)
 
