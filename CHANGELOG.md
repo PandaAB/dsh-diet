@@ -1,0 +1,12 @@
+# Changelog
+
+## 0.1.0 — 2026-11-20
+
+- Initial public release.
+- Daily macro targets from body weight and activity level.
+- Macro-derived and quick-calorie views.
+- 24 built-in foods with search, categories and per-gram logging.
+- Custom foods with create, edit, delete, optional historical sync.
+- Meals, day navigation, seven-day trend, undo and guarded clear.
+- English and Simplified Chinese UI.
+- Browser-local persistence with no model or network calls.

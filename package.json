@@ -1,0 +1,84 @@
+{
+  "name": "dsh-diet",
+  "version": "0.1.0",
+  "description": "A DeepSeek Harness plugin for daily macro targets and per-gram food logging.",
+  "type": "module",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "src",
+    "scripts",
+    "docs",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "icon": "icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "npm run build && npm run check",
+    "prepublishOnly": "npm run test",
+    "pack:check": "npm pack --dry-run"
+  },
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "nutrition",
+    "nutrition-tracker",
+    "diet",
+    "food-log",
+    "macros"
+  ],
+  "author": {
+    "name": "Zhuoluo Zhao",
+    "url": "https://github.com/PandaAB"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PandaAB/dsh-diet.git"
+  },
+  "homepage": "https://github.com/PandaAB/dsh-diet#readme",
+  "bugs": {
+    "url": "https://github.com/PandaAB/dsh-diet/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  },
+  "packageManager": "npm@12.2.0"
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Daily intake (dsh-diet)",
+    "description": "Calculates daily carbohydrate, protein and fat targets from body weight and activity, then logs food by grams from a preset or custom library. Open it from the sidebar's Daily intake entry. Logs stay in this browser only; the formulas are everyday estimates, not medical advice."
+  }
+}
