@@ -16,7 +16,7 @@ if (packageJson.publishConfig?.access !== 'public') errors.push('publishConfig.a
 if (!packageJson.dsh?.bundle?.patch) errors.push('dsh.bundle.patch is missing')
 if (!packageJson.dsh?.client?.platform) errors.push('dsh.client.platform is missing')
 
-for (const file of ['index.js', 'lib/client.js', 'cordis.patch.yml', 'icon.svg', 'README.md', 'LICENSE', 'README.zh.md', 'CHANGELOG.md']) {
+for (const file of ['index.js', 'lib/client.js', 'cordis.patch.yml', 'icon.svg', 'README.md', 'README.en.md', 'LICENSE', 'CHANGELOG.md']) {
   if (!existsSync(join(root, file))) errors.push(`missing ${file}`)
 }
 for (const file of ['locale/en.json', 'locale/zh.json']) {

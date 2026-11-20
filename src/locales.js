@@ -177,6 +177,7 @@ export const zh = {
 
   'footer.local': '记录保存在此浏览器，不会上传。',
   'footer.disclaimer': '公式与食物数据仅供日常估算，不构成医疗或营养建议。',
+  'footer.formulaCredit': '公式参考：抖音「零重力R哥」的“傻瓜公式”',
 
   'common.close': '关闭',
   'common.delete': '删除',
@@ -393,6 +394,7 @@ export const en = {
 
   'footer.local': 'Saved in this browser only. Nothing is uploaded.',
   'footer.disclaimer': 'Formulas and food values are everyday estimates, not medical or dietary advice.',
+  'footer.formulaCredit': 'Formula reference: the “foolproof formula” shared by Douyin creator 零重力R哥',
 
   'common.close': 'Close',
   'common.delete': 'Delete',

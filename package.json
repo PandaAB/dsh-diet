@@ -1,7 +1,7 @@
 {
   "name": "dsh-diet",
   "version": "0.1.0",
-  "description": "A DeepSeek Harness plugin for daily macro targets and per-gram food logging.",
+  "description": "DeepSeek Harness 每日减脂饮食记录插件，参考抖音零重力R哥“傻瓜公式”计算每日摄入目标。",
   "type": "module",
   "engines": {
     "node": "^22.19.0 || >=24.0.0",
@@ -24,7 +24,7 @@
     "scripts",
     "docs",
     "README.md",
-    "README.zh.md",
+    "README.en.md",
     "CHANGELOG.md",
     "LICENSE"
   ],
@@ -59,7 +59,11 @@
     "nutrition-tracker",
     "diet",
     "food-log",
-    "macros"
+    "macros",
+    "weight-loss",
+    "fat-loss",
+    "减脂",
+    "饮食记录"
   ],
   "author": {
     "name": "Zhuoluo Zhao",

@@ -10,3 +10,4 @@
 - Meals, day navigation, seven-day trend, undo and guarded clear.
 - English and Simplified Chinese UI.
 - Browser-local persistence with no model or network calls.
+- Chinese-first README and formula credit to 抖音「零重力R哥」.

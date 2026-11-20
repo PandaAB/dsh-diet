@@ -1695,6 +1695,8 @@ export function DietPage(props) {
             <span>{t('footer.local')}</span>
             <span className="dietFooterDot" />
             <span>{t('footer.disclaimer')}</span>
+            <span className="dietFooterDot" />
+            <span>{t('footer.formulaCredit')}</span>
           </footer>
         </div>
       </div>
