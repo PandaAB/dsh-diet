@@ -6,6 +6,7 @@ Daily macro targets and per-gram food logging for [DeepSeek Harness](https://dee
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)
 ![DeepSeek Harness](https://img.shields.io/badge/DeepSeek%20Harness-%E2%89%A50.2.0--rc.2-4A5699.svg)
+[![CI](https://github.com/PandaAB/dsh-diet/actions/workflows/ci.yml/badge.svg)](https://github.com/PandaAB/dsh-diet/actions/workflows/ci.yml)
 [![GitHub stars](https://img.shields.io/github/stars/PandaAB/dsh-diet?style=social)](https://github.com/PandaAB/dsh-diet)
 
 A sidebar page that turns body weight and activity into daily carbohydrate, protein and fat targets, then records what you actually ate — food by food, gram by gram.
