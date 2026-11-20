@@ -5,3 +5,11 @@ build/
 .DS_Store
 .env
 .env.*
+.npmrc
+.credentials*
+*.pem
+*.key
+*.p12
+*.pfx
+*.secret
+*.token
