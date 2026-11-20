@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1 — 2026-11-20
+
+- Publish releases with npm Trusted Publishing (OIDC); no long-lived `NPM_TOKEN`.
+- Clarify the first-publish bootstrap and the Trusted Publishing setup.
+
 ## 0.1.0 — 2026-11-20
 
 - Initial public release.

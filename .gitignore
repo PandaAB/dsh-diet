@@ -13,3 +13,5 @@ build/
 *.pfx
 *.secret
 *.token
+
+*.tgz
