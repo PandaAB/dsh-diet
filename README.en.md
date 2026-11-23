@@ -71,7 +71,7 @@ For body weight `w` kg:
 
 - **Targets from body weight** — enter weight, activity group and carb level; targets update immediately.
 - **Two calorie views** — macro-derived calories or the quick formula (active × 26, less active × 24 kcal/kg).
-- **Food log by grams** — 24 built-in foods, searchable and grouped by category, plus custom foods with per-100 g nutrition.
+- **Food log by grams** — 25 built-in foods, searchable and grouped by category, plus custom foods with per-100 g nutrition.
 - **Meals and days** — breakfast / lunch / dinner / snack, previous/next day, seven-day chart, edit, delete with undo, guarded clear-day.
 - **Custom food editing** — update per-100 g values and optionally sync past entries. Built-in presets are reference values; use **Edit as custom food** to save your own version.
 - **Bilingual UI** — English and Simplified Chinese, following the Harness language. Chinese is the primary project language; this file is the English companion.

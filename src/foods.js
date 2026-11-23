@@ -22,6 +22,7 @@ export const BUILT_IN_FOODS = [
   { id: 'apple', nameKey: 'food.apple', category: 'produce', defaultGrams: 150, per100: { kcal: 53, carbs: 13.7, protein: 0.4, fat: 0.2 } },
   { id: 'blueberry', nameKey: 'food.blueberry', category: 'produce', defaultGrams: 80, per100: { kcal: 57, carbs: 14.5, protein: 0.7, fat: 0.3 } },
   { id: 'broccoli', nameKey: 'food.broccoli', category: 'produce', defaultGrams: 100, per100: { kcal: 36, carbs: 4.3, protein: 4.1, fat: 0.6 } },
+  { id: 'tomato', nameKey: 'food.tomato', category: 'produce', defaultGrams: 150, per100: { kcal: 18, carbs: 3.9, protein: 0.9, fat: 0.2 } },
   { id: 'spinach', nameKey: 'food.spinach', category: 'produce', defaultGrams: 80, per100: { kcal: 23, carbs: 1.4, protein: 2.9, fat: 0.4 } },
   { id: 'avocado', nameKey: 'food.avocado', category: 'produce', defaultGrams: 80, per100: { kcal: 160, carbs: 8.5, protein: 2.0, fat: 14.7 } },
   { id: 'whole-milk', nameKey: 'food.wholeMilk', category: 'dairy', defaultGrams: 250, per100: { kcal: 65, carbs: 5.0, protein: 3.3, fat: 3.6 } },

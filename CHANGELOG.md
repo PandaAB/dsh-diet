@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2 — 2026-11-23
+
+- Add tomato (西红柿/番茄) to the built-in produce foods: 18 kcal, 3.9 g carbs, 0.9 g protein and 0.2 g fat per 100 g.
+
 ## 0.1.1 — 2026-11-20
 
 - Publish releases with npm Trusted Publishing (OIDC); no long-lived `NPM_TOKEN`.
